@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    width: 380px;
+    max-width: 80%;
+    height: 453px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    transition: 0.7s;
+    /* border: 1.5px solid rgba(255,255,255,0.8); */
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.head {
+    padding-top: 130px;
+    font-size: 70px;
+    opacity: 0.5;
+}
+
+img {
+    margin-top: 15px;
+    border-radius: 5%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.text {
+    padding-top: 10px;
+}
+
+.para {
+    padding-top: 10px;
+}
+
+#p2{
+    margin-bottom: 10px;
+}
+
+i {
+    color: white;
+    margin: 25px 15px 15px 15px;
+    font-size: 30px;
+}
+
+.content {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.card:hover .content {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.card:hover .head {
+    display: none;
+}
+
+
+@media(max-width: 1400px) {
+    .card {
+        width: 800px;
+        max-width: 80%;
+        height: 800px;
+        font-size: 36px;
+    }
+
+    .card:hover .head {
+        display: block;
+    }
+
+    .para {
+        padding: 10px 10px 10px;
+    }
+
+    .card {
+        z-index: 1;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .card {
+        width: 400px;
+        max-width: 80%;
+        height: 460px;
+        font-size: 16px;
+    }
+
+    .card:hover .head {
+        display: none;
+    }
+}
+
+.fa-google:hover {
+    color: red;
+
+}
+
+.fa-github:hover {
+    color: gray;
+
+}
+
+.fa-snapchat:hover {
+    color: yellow;
+}
+
+.fa-linkedin:hover {
+    color: rgb(56, 46, 197);
+}
+
+.fa-instagram:hover {
+    color: hotpink;
+}
+
+
+body {
+    background: black;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(90deg, red, purple, blue);
+    clip-path: circle(25% at left 85%);
+    z-index: 0;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(blue, pink);
+    clip-path: circle(30% at right 20%);
+    z-index: 0;
+}
