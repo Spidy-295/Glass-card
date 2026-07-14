@@ -76,7 +76,7 @@ i {
 }
 
 
-@media(max-width: 1400px) {
+/* @media(max-width: 1400px) {
     .card {
         width: 800px;
         max-width: 80%;
@@ -109,7 +109,7 @@ i {
     .card:hover .head {
         display: none;
     }
-}
+} */
 
 .fa-google:hover {
     color: red;
@@ -148,7 +148,7 @@ body::before {
 
     background: linear-gradient(90deg, red, purple, blue);
     clip-path: circle(25% at left 85%);
-    z-index: 0;
+    z-index: -1;
 }
 
 body::after {
