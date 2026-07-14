@@ -75,7 +75,7 @@ i {
     display: none;
 }
 
- @media(max-width: 768px) {
+ @media(max-width: 440px) {
             img {
                 margin-top: 15px;
                 border-radius: 5%;
