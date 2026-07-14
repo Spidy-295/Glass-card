@@ -75,41 +75,20 @@ i {
     display: none;
 }
 
+ @media(max-width: 768px) {
+            img {
+                margin-top: 15px;
+                border-radius: 5%;
+                height: 280px;
+                width: 280px;
+                object-fit: cover;
+            }
 
-/* @media(max-width: 1400px) {
-    .card {
-        width: 800px;
-        max-width: 80%;
-        height: 800px;
-        font-size: 36px;
-    }
+            .fa-brands {
+                font-size: 24px;    
+            }
 
-    .card:hover .head {
-        display: block;
-    }
-
-    .para {
-        padding: 10px 10px 10px;
-    }
-
-    .card {
-        z-index: 1;
-    }
-
-}
-
-@media(max-width: 768px) {
-    .card {
-        width: 400px;
-        max-width: 80%;
-        height: 460px;
-        font-size: 16px;
-    }
-
-    .card:hover .head {
-        display: none;
-    }
-} */
+        }
 
 .fa-google:hover {
     color: red;
